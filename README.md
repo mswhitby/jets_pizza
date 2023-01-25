@@ -5,7 +5,8 @@ Jet's Pizza is opening up for business and they're trying to figure out an easy 
 - onions (+$1.25), 
 - pineapple (+$3.50), 
 - mushrooms (+$3.75), and 
-- avocado (+$0.40). 
+- avocado (+$0.40).
+
 The base price of a pizza is $15 but if the total ends up being over $20, a 5% discount is applied (with the final price rounded to the nearest cent). 
 
 Your job is to create a program (Python 3.8) that takes in a user's topping preference and return the pizza's price.
