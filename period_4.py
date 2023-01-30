@@ -18,21 +18,25 @@ def pizza_price(toppings):
             base_price = base_price + 3.50
          
         if letter == "M":
-            base_price = base_price = 3.75
+            base_price = base_price + 3.75
             
         if letter == "A":
-            base_price = base_price = 0.40
+            base_price = base_price + 0.40
+            
+    if base_price >= 20:
+        base_price = base_price * 0.95
             
     return base_price
             
 
         
         
-        
+
+       
         
         
         
         
 if __name__ == "__main__":
-    price = pizza_price("TPM")
-    print(price)
+    toppings_input = input("What toppings?")
+    print(pizza_price(toppings_input))
