@@ -23,7 +23,7 @@ def pizza_price(toppings):
         if letter == "A":
             base_price = base_price = 0.40
             
-        return base_price
+    return base_price
             
 
         
