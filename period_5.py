@@ -25,7 +25,7 @@ def pizza_price():
         if character == "A":
             base_price = base_price + .40
             
-    if base_price >= 20:
+    if base_price > 20:
         base_price = base_price * .95
             
         
