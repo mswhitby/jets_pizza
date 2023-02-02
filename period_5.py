@@ -6,8 +6,12 @@ def pizza_price():
     
     # The variable "toppings" is assigned input value
     toppings = input("What toppings? ")
+    calculated_toppings_list = []
     
     for character in toppings:
+        
+        if character in calculated_toppings_list:
+            continue
         
         # equivalency
         if character == "T":
@@ -24,6 +28,9 @@ def pizza_price():
         
         if character == "A":
             base_price = base_price + .40
+        
+        calculated_toppings_list.append(character)
+        
             
     if base_price > 20:
         base_price = base_price * .95
