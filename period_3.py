@@ -22,6 +22,9 @@ def pizza_price(toppings):
         if item == "a":
             base_price = base_price + .40
             
+    if base_price > 20:
+        ...
+
     print(base_price)
     
     
@@ -35,8 +38,3 @@ def pizza_price(toppings):
 # ask user to input toppings
 toppings = input("What toppings? ")
 price = pizza_price(toppings)
-    
-    
-    
-    
-    
