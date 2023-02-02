@@ -5,7 +5,13 @@ def pizza_price(toppings):
     # equal sign (=) - assignment
     base_price = 15
     
+    # assing an empty list to calculated_toppings_list
+    calculated_toppings_list = []
+    
     for letter in toppings:
+        
+        if letter in calculated_toppings_list:
+            continue
     
         # two equal signs (==) - equvilancy
         if letter == "T":
@@ -23,10 +29,18 @@ def pizza_price(toppings):
         if letter == "A":
             base_price = base_price + 0.40
             
+        calculated_toppings_list.append(letter)
+
     if base_price > 20:
         base_price = base_price * 0.95
+        
+    
+    base_price = round(base_price, 2)
+    
+    sentence = "Your price is $" + str(base_price) + "."
             
-    return base_price
+    
+    return sentence
             
 
         
@@ -38,5 +52,6 @@ def pizza_price(toppings):
         
         
 if __name__ == "__main__":
-    toppings_input = input("What toppings?")
+    toppings_input = input("What toppings? ")
     print(pizza_price(toppings_input))
+    
