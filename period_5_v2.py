@@ -24,7 +24,7 @@ def pizza_price():
         if character in calculated_toppings_list:
             continue
         
-        topping_price = price_dict.get(character)
+        topping_price = price_dict.get(character, 0)
         base_price = base_price + topping_price
         
         
