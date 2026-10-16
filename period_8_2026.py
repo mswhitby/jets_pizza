@@ -2,6 +2,10 @@ def calc_price(toppings):
     
     base_price = 15
     
+    print(toppings)
+    toppings = set(toppings)
+    print(toppings)
+    
     for t in toppings:
         
         # tomatoes
